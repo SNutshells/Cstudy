@@ -1,22 +1,23 @@
 clone_depth: 5
-
+ 
 environment:
-  my_variable:
-  #access_token:
+  nodejs_version: "6"
+  access_token:
     secure: iiyysIZlmx6eGQP+bG/Yt7ZV+mo2MIkGWnael32cJ+Zcc2jfH0NksHWgAZ6z3Me2
-
+ 
 install:
+  - ps: Install-Product node $env:nodejs_version
   - node --version
   - npm --version
   - npm install
   - npm install hexo-cli -g
-
+ 
 build_script:
   - hexo generate
-
+ 
 artifacts:
   - path: public
-
+ 
 on_success:
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
