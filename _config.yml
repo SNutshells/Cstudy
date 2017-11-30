@@ -5,11 +5,17 @@
 # Site
 title: Hexo
 subtitle:
-description:
-author: John Doe
-language:
+description: "放空思想，专注在手头的事情上"
+author: Su Baoyani
+language: zh-Hans
 timezone:
 
+# local Search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
