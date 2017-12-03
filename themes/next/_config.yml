@@ -14,7 +14,7 @@ override: false
 # Put your favicons into `hexo-site/source/` or `hexo-site/themes/next/source/images/` directory.
 # Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
 # And if you want to place your icons in `hexo-site/source/`, you must remove `/images` prefix from pathes.
-favicon:
+favicon: /favicon.png
   small: /images/favicon-16x16.png
   medium: /images/favicon-32x32.png
   apple_touch_icon: /images/apple-touch-icon.png
@@ -120,7 +120,7 @@ scheme: Gemini
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
+social:
   #GitHub: https://github.com/yourname || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
@@ -223,8 +223,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
   separated_meta: true
 
@@ -366,7 +366,16 @@ changyan:
   appid:
   appkey:
 
-
+# Blogrolls
+links_title: 推荐阅读
+#links_layout: block
+links_layout: inline
+links:
+  Web前端导航: http://www.alloyteam.com/nav/
+  前端书籍资料: http://www.36zhen.com/t?id=3448
+  百度前端技术学院: http://ife.baidu.com/
+  google前端开发基础: http://wf.uisdc.com/cn/
+  
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://github.com/xCss/Valine
@@ -397,7 +406,7 @@ valine:
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-#jiathis:
+jiathis: false
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
@@ -609,7 +618,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -629,7 +638,7 @@ pace: false
 pace_theme: pace-theme-minimal
 
 # Canvas-nest
-canvas_nest: false
+canvas_nest: true
 
 # three_waves
 three_waves: false
@@ -726,7 +735,10 @@ vendors:
   # https://github.com/ethantw/Han
   han:
 
-
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
+  
 # Assets
 css: css
 js: js
