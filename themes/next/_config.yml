@@ -14,7 +14,8 @@ override: false
 # Put your favicons into `hexo-site/source/` or `hexo-site/themes/next/source/images/` directory.
 # Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
 # And if you want to place your icons in `hexo-site/source/`, you must remove `/images` prefix from pathes.
-favicon: /favicon.png
+favicon: 
+#/favicon.png
   small: /images/favicon-16x16.png
   medium: /images/favicon-32x32.png
   apple_touch_icon: /images/apple-touch-icon.png
@@ -367,14 +368,14 @@ changyan:
   appkey:
 
 # Blogrolls
-links_title: 推荐阅读
+#links_title: 推荐阅读
 #links_layout: block
-links_layout: inline
-links:
-  Web前端导航: http://www.alloyteam.com/nav/
-  前端书籍资料: http://www.36zhen.com/t?id=3448
-  百度前端技术学院: http://ife.baidu.com/
-  google前端开发基础: http://wf.uisdc.com/cn/
+#links_layout: inline
+#links:
+  #Web前端导航: http://www.alloyteam.com/nav/
+  #前端书籍资料: http://www.36zhen.com/t?id=3448
+  #百度前端技术学院: http://ife.baidu.com/
+  #google前端开发基础: http://wf.uisdc.com/cn/
   
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
@@ -618,7 +619,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: true
+pace: false
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
